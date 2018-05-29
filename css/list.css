@@ -1,0 +1,8 @@
+    #main .content{max-width:1280px;width:100%;margin:0 auto;}
+    #main .content table{width:100%;border-collapse: collapse;text-align: center;margin-top: 30px;}
+    #main .content table th{background-color: #444;color: #fff;}
+    #main .content table td{color:#555;height:80px;}    
+    #main .content table td span{display: block;color:#b79c87;}
+    #main .content table td span.s{color:#666;font-size:0.8rem;}
+    #main .content table tr{border-bottom:1px dotted #e2e2e2;}
+    #main .content table tr:last-child{border:0;}

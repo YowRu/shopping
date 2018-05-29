@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/load.js"></script>
+    <link rel="stylesheet" href="icon/font/flaticon.css" type="text/css">
+    <link rel="stylesheet" href="css/layout.css" type="text/css">
+    <link rel="stylesheet" href="css/member.css" type="text/css">
+    <title>會員中心</title>
+</head>
+<body>
+    <header></header>
+    <div id="main">
+       <ul id="breadcrumbs">
+            <li><a href="index.html">首頁</a>></li>
+            <li><a href="member.html" class="current">會員中心</a></li>
+        </ul>
+       <div class="mem_wp">
+         <ul class="tabs">
+            <li><a href="#tab1">會員資料</a></li>
+            <li><a href="#tab2">資料修改</a></li>
+            <li><a href="#tab3">訂單查詢</a></li>
+        </ul>
+         <div class="tab_container">
+            <ul class="tab_content">
+                <li id="tab1" class="content">
+                    <h2>一般會員</h2>
+                    <p>您好，感謝您再次光臨BONNY &amp; READ! 祝您購物愉快。</p>
+                    <div class="row">
+                        <div class="left">
+                            <div class="up">
+                                <p>購物金</p>
+                                <p class="b">$520</p>
+                                <span class="show1">如何獲得</span>
+                            </div>
+                            <div class="do"><p class="show1">查明細</p></div>
+                        </div>
+                        <div class="right">
+                            <div class="up">
+                                <p>再消費</p>
+                                <p class="b">$2170</p>
+                                <span>升級VIP</span>
+                            </div>
+                            <div class="do"><p class="show2">看VIP優惠</p></div>
+                        </div>
+                        <div class="content1">
+                            <h3>如何獲得購物金</h3>
+                            <p>若您申請了退貨事宜，在您退貨後的退貨金將會存入您的 [線上帳戶] 中。在您收到退貨處理的email通知後，麻煩登入後至會員中心查看購物金完成確認。 往後購物皆可消費折抵使用，無使用期限。</p>
+                            <table>
+                           <tr>
+                                <th>日期</th>
+                                <th>訂單編號</th>
+                                <th>購物金</th>
+                                <th>原因</th>
+                            </tr>
+                           <tr>
+                                <td>2013/09/08</td>
+                                <td> </td>
+                                <td>50</td>
+                                <td>新會員</td>
+                            </tr>
+                           <tr>
+                                <td>2013/09/08</td>
+                                <td>130908000187</td>
+                                <td>-50</td>
+                                <td>訂單使用</td>
+                            </tr>
+                            <tr>
+                                <td>2013/12/13</td>
+                                <td>131213003166</td>
+                                <td>1290</td>
+                                <td>客服調整</td>
+                            </tr>
+                            <tr>
+                                <td>2014/02/23</td>
+                                <td>140242008016</td>
+                                <td>1290</td>
+                                <td>客服調整</td>
+                            </tr>
+                            <tr>
+                                <td colspan="4" class="back1">回上一頁</td>
+                            </tr>
+                       </table>
+                        </div>
+                        <div class="content2">
+                            <table>
+                                <tr>
+                                    <th>一般會員</th>
+                                    <th>VIP</th>
+                                    <th>白金VIP</th>
+                                </tr>
+                                <tr>
+                                    <td>滿699免運</td>
+                                    <td>全館95折<br>滿699免運</td>
+                                    <td>全館9折<br>滿699免運</td>
+                                </tr>
+                                <tr>
+                                    <td>單筆1000<br>累積消費3500續約一年</td>
+                                    <td>單筆1500<br>累積消費5000續約一年</td>
+                                    <td>單筆2500<br>累積消費8000續約一年</td>
+                                </tr>
+                                <tr>
+                                    <td>當月壽星50元</td>
+                                    <td>當月壽星100元</td>
+                                    <td>當月壽星150元</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="3" class="back2">回上一頁</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </li>
+                <li id="tab2" class="content">
+                   <div class="row2">
+                      <h2>資料修改</h2>
+                      <div class="oldPwd">
+                        <label for="oldPwd">舊密碼</label>
+                        <input type="password" name="oldPwd" id="oldPwd" maxlength="20" required="required" placeholder="請輸6~20個英數字或鍵盤符號" />
+                    </div>
+                      <div class="newPwd">
+                        <label for="newPwd">新密碼</label>
+                        <input type="password" name="newPwd" id="newPwd" maxlength="20" required="required" placeholder="請輸6~20個英數字或鍵盤符號" />
+                    </div>    
+                      <div class="confirmNPwd">
+                        <label for="confirmNPwd">確認密碼</label>
+                        <input type="password" name="confirmNPwd" id="confirmNPwd" maxlength="20" required="required" placeholder="請再一次輸入相同密碼" />
+                    </div>           
+                      <div class="bottom">
+                        <input type="submit" name="submitbtn" class="c btn" value="確認修改" />
+                    </div>
+                    </div>
+                </li>
+                <li id="tab3" class="content">
+                     <h2>訂單查詢</h2>
+                     <div class="content">
+                       <table>
+                           <tr>
+                                <th>訂單編號</th>
+                                <th>成立時間</th>
+                                <th>訂單狀態</th>
+                                <th>出貨日期</th>
+                                <th>退貨</th>
+                                <th>查詢</th>
+                            </tr>
+                           <tr>
+                                <td>170908000402</td>
+                                <td>2017/09/08</td>
+                                <td>已出貨</td>
+                                <td>2017/09/11</td>
+                                <td>已過鑑賞期</td>
+                                <td>
+                                   <a href="list.html">
+                                     <i class="flaticon-magnifying-glass" title="查詢"></i>
+                                   </a>
+                                </td>
+                            </tr>
+                           <tr>
+                                <td>170906002342</td>
+                                <td>2017/09/06</td>
+                                <td>已出貨</td>
+                                <td>2017/09/08</td>
+                                <td>已過鑑賞期</td>
+                                <td>
+                                   <a href="list.html">
+                                     <i class="flaticon-magnifying-glass" title="查詢"></i>
+                                   </a>
+                                </td>
+                            </tr>
+                       </table>
+                       <h3 id="ps">※付款方式以現場現金交易!如接獲任何來電，要求變更付款方式或是至ATM操作等，請勿理會!</h3>
+                       <div class="Mcontent">
+                          <div class="row">
+                               <P><a>訂單編號 :</a><a>170908000402</a></P>
+                               <P><a>成立時間 :</a><a>2017/09/08</a></P> 
+                               <P><a>訂單狀態 :</a><a>已出貨</a></P> 
+                               <P><a>出貨日期 :</a><a>2017/09/11</a></P>
+                               <P><a>退貨 :</a><a>已過鑑賞期</a></P>
+                               <p>
+                                  <a href="list.html">查詢
+                                    <i class="flaticon-magnifying-glass" title="查詢"></i>
+                                  </a>
+                               </p> 
+                          </div>
+                          <div class="row">
+                               <P><a>訂單編號 :</a><a>170911002302</a></P>
+                               <P><a>成立時間 :</a><a>2017/09/11</a></P> 
+                               <P><a>訂單狀態 :</a><a>已出貨</a></P>  
+                               <P><a>出貨日期 :</a><a>2017/09/08</a></P>
+                               <P><a>退貨 :</a><a>已過鑑賞期</a></P>
+                               <p>
+                                  <a href="list.html">查詢
+                                    <i class="flaticon-magnifying-glass" title="查詢"></i>
+                                  </a>
+                               </p> 
+                          </div>
+                       </div>
+                     </div>
+                </li>
+            </ul>
+        </div>
+       </div>
+    </div>
+    <footer></footer>
+    
+<script>
+$(function(){
+		// 預設顯示第一個 Tab
+		var _showTab = 0;
+		$('.mem_wp').each(function(){
+			// 目前的頁籤區塊
+			var $tab = $(this);
+			var $defaultLi = $('.tabs li', $tab).eq(_showTab).addClass('active');
+			$($defaultLi.find('a').attr('href')).siblings().hide();
+			
+			// 當 li 頁籤被點擊時...
+			// 若要改成滑鼠移到 li 頁籤就切換時, 把 click 改成 mouseover
+			$('.tabs li', $tab).click(function() {
+				// 找出 li 中的超連結 href(#id)
+				var $this = $(this),
+					_clickTab = $this.find('a').attr('href');
+				// 把目前點擊到的 li 頁籤加上 .active
+				// 並把兄弟元素中有 .active 的都移除 class
+				$this.addClass('active').siblings('.active').removeClass('active');
+				// 淡入相對應的內容並隱藏兄弟元素
+				$(_clickTab).stop(false, true).fadeIn().siblings().hide();
+				return false;
+			}).find('a').focus(function(){
+				this.blur();
+			});
+		});
+	});  
+    $('.mem_wp .tab_content li .row .show1').click(function(){
+        $('.mem_wp .tab_content li#tab1 .content1').show();
+        $('.mem_wp .tab_content li .row .left').hide();
+        $('.mem_wp .tab_content li .row .right').hide();
+    });
+    $('.mem_wp .tab_content li#tab1 table .back1').click(function(){
+        $('.mem_wp .tab_content li#tab1 .content1').hide();
+        $('.mem_wp .tab_content li .row .left').show();
+        $('.mem_wp .tab_content li .row .right').show();
+    });
+    $('.mem_wp .tab_content li .row .show2').click(function(){
+        $('.mem_wp .tab_content li#tab1 .content2').show();
+        $('.mem_wp .tab_content li .row .left').hide();
+        $('.mem_wp .tab_content li .row .right').hide();
+    });
+    $('.mem_wp .tab_content li#tab1 table .back2').click(function(){
+        $('.mem_wp .tab_content li#tab1 .content2').hide();
+        $('.mem_wp .tab_content li .row .left').show();
+        $('.mem_wp .tab_content li .row .right').show();
+    });
+</script>    
+</body>
+</html>

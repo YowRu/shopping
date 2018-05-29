@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/load.js"></script>
+    <link rel="stylesheet" href="icon/font/flaticon.css" type="text/css">
+    <link rel="stylesheet" href="css/layout.css" type="text/css">
+    <link rel="stylesheet" href="css/login.css" type="text/css">
+    <title>登入</title>
+</head>
+<body>
+    <header></header>
+    <div id="main">
+        <ul id="breadcrumbs">
+            <li><a href="index.html">首頁</a>></li>
+            <li><a href="login.html" class="current">登入</a></li>
+        </ul>
+        <div class="wp">
+            <div class="left">
+                <h2>會員登入</h2>
+                <div class="content">              
+                   <form id="login" name="login" method="POST" action=" ">
+                        <div class="account">
+                            <label for="account">會員帳號</label>
+                            <input id="account" name="account" type="text" placeholder="會員帳號">
+                        </div>
+                        <div class="memPwd">
+                            <label for="memPwd">登入密碼</label>
+                            <input type="password" name="memPwd" id="memPwd" maxlength="20" required="required" placeholder="請輸6~20個英數字或鍵盤符號" />
+                        </div> 
+                        <div class="row1bottom">
+                            <input type="submit" name="login_b" class="btn" id="login_b" value="會員登入" />
+                            <a class="f btn">忘記密碼</a>
+                        </div>    
+                   </form>
+                   <div class="fb">
+                      <a onclick="" id="" class="btn-fb" href="">Facebook登入</a>
+                   </div>  
+                   <div class="row1"><!--訊息EX:尚未註冊、密碼錯誤、尚未EMAIL驗證--></div>
+                </div>
+            </div>
+            <div class="right">
+                <h2>會員註冊</h2>
+                <div class="content">
+                   <form id="addmember" name="addmember" method="POST" action="">
+                    <div class="account">
+                        <label for="account">會員帳號</label>
+                        <input id="account" name="account" type="text" placeholder="會員帳號">
+                    </div>
+                    <div class="memPwd">
+                        <label for="memPwd">登入密碼</label>
+                        <input type="password" name="memPwd" id="memPwd" maxlength="20" required="required" placeholder="請輸6~20個英數字或鍵盤符號" />
+                    </div>
+                    <div class="confirmPwd">
+                        <label for="confirmPwd">確認密碼</label>
+                        <input type="password" name="confirmPwd" id="confirmPwd" maxlength="20" required="required" placeholder="請再一次輸入相同密碼" />
+                    </div> 
+                    <div class="name">
+                        <label for="name">姓名</label>     
+                        <input name="name" type="text" maxlength="6" id="name" required="required" placeholder="" value=""/>
+                    </div>
+                    <input type="submit" name="addBtn" id="addBtn" value="確認送出" />
+                </form> 
+                </div>
+             </div>  
+         </div>
+         <div class="row2">
+                <div class="show1">
+                    <h2>忘記密碼</h2>
+                    <div class="account">
+                        <label for="account">會員帳號</label>
+                        <input id="account" name="account" type="text" placeholder="會員帳號">
+                    </div>
+                    <div class="email">     
+                        <label for="email">電子信箱</label>
+                        <input type="text" name="email" id="email" placeholder="請輸入E-Mail帳號" />
+                    </div>
+                    <div class="bottom">
+                        <input type="button" class="r btn" value="重設密碼"> 
+                    </div>
+                    <div class="back">返回會員登入</div>
+                </div>
+                <div class="show2">
+                    <div class="newPwd">
+                        <label for="newPwd">新密碼</label>
+                        <input type="password" name="newPwd" id="newPwd" maxlength="20" required="required" placeholder="請輸6~20個英數字或鍵盤符號" />
+                    </div>    
+                    <div class="confirmNPwd">
+                        <label for="confirmNPwd">確認密碼</label>
+                        <input type="password" name="confirmNPwd" id="confirmNPwd" maxlength="20" required="required" placeholder="請再一次輸入相同密碼" />
+                    </div>           
+                    <div class="bottom">
+                        <input type="submit" name="submitbtn" class="c btn" value="確認修改" />
+                    </div>
+                    <div class="back">返回會員登入</div>    
+                </div>
+           </div> 
+    </div>
+    <footer></footer>
+<script>
+    var $W =$(window).width();
+    $(window).resize(r);
+    $( document ).ready(r);
+    function r(){
+        $('.f').click(function(){
+            $('#main .wp').hide();
+            $('.row2 .show1').fadeIn(700);
+            
+        });
+        $('.back').click(function(){
+            $('#main .wp').fadeIn(700);
+            $('.row2 .show1').hide();
+            });
+        $('.show2 .back').click(function(){
+                    $('.row2 .show2').hide();
+                    $(this).parents('.show2').find('.back').hide();
+                });
+        $('.r').click(function(){
+        $('.row2 .show2').slideDown(700);
+        $(this).parents('.show1').find('.back').hide();
+    });
+    $('.show2 .back').click(function(){
+        $('.row2 .show2').hide();
+        $(this).parents('.show2').find('.back').hide();
+        
+    });
+            }
+    
+ /*$('.f').click(function(){
+        $('#main .left h2').text('忘記密碼');
+        $('#login').hide();
+        $('.fb').hide();
+        $('#main .right').hide();
+        $('.row2 .show1').fadeIn(700);
+        $('#main .left').css({'width':'80%','margin':'0 auto'});
+        $('#main .wp .left .content').css({'border':0});
+        if($W<=700){
+            $('#main .left').css({'width':'100%'});
+        }
+    });
+    $('.back').click(function(){
+        $('#main .left h2').text('會員登入');
+        $('#login').fadeIn(700);
+        $('.fb').fadeIn(700);
+        $('#main .right').fadeIn(700);
+        $('.row2 .show1').hide();
+        $('#main .left').css({'width':'48%','margin':'0'});
+        $('#main .wp .left .content').css({'border-right':'1px dotted #dbdbdb'});
+        if($W<=700){
+            $('#main .right').css({'width':'100%'});
+        }
+    }); */
+    
+    
+</script>
+</body>
+</html>

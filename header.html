@@ -1,0 +1,66 @@
+<div class="row1">
+    <div class="left">
+        <div class="row4">
+            <nav class="menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </nav>
+            <ul class="menuOpen">
+                <li><a href="new.html">NEW</a></li>
+                <li><a href="new.html">項鍊</a></li>
+                <li><a href="new.html">耳環</a></li>
+                <li><a href="new.html">手鏈</a></li>
+                <li><a href="new.html">戒指</a></li>
+                <li><a href="new.html">髮飾</a></li>
+            </ul>
+        </div>
+        <span class="flaticon-facebook-black-social-button-circle"></span>
+        <span class="flaticon-line-logo"></span>
+    </div>
+    <div class="right">
+        <p><a href="login.html">登入</a></p>
+        <p><a href="member.html">會員中心</a></p>
+        <p>
+           <a href="cart.html">
+            <span class="flaticon-shopping-cart-of-checkered-design"></span>
+            <span class="cir">(10)</span></a>
+        </p>
+    </div>
+</div>
+<div class="row2"><a href="shoppingIndex.html"><h1> BONNY &amp; READ </h1></a></div>
+<div class="row3">
+    <p><a href="new.html"><span>NEW</span></a></p>
+    <p><a href="new.html"><span>項鍊</span></a></p>
+    <p><a href="new.html"><span>耳環</span></a></p>
+    <p><a href="new.html"><span>手鏈</span></a></p>
+    <p><a href="new.html"><span>戒指</span></a></p>
+    <p><a href="new.html"><span>髮飾</span></a></p>
+</div>
+<div class="bg"></div>
+<script>
+    function menu (){
+        var $W=$(window).width();
+        var $H=$(window).height();
+        var $mh= $H-($('header').height())-($('footer').height());
+        $('header .menuOpen').width($W);
+        $('header .menuOpen').hide();
+        $('header .bg').height($H+118);
+        if($('#main').height()<$mh){
+            $('#main').height($mh);
+        }
+      }
+    $( document ).ready(menu);
+    $(window).resize(menu);
+  
+    $('header .menu').click(function(){
+        $('header .menuOpen').slideToggle(800);
+        $('header .bg').show();
+        $("body").toggleClass('menuchange');
+    });
+$('header .bg').click(function(){
+        $('header .menuOpen').fadeToggle(500);
+        $('header .bg').hide();
+        $("body").toggleClass('menuchange');
+    });
+</script>

@@ -1,0 +1,16 @@
+#main #breadcrumbs,img{max-width:1280px;width:100%;} 
+    #main .wp{margin:10px auto 100px;}
+    #main h2{color: #7c5e46;font-size:1.4rem;margin-top:40px;}
+    #main section{width:80%;margin:20px auto 5px;line-height:2rem;color:#666;}  
+    #main section ul{margin:10px auto 20px;}
+    #main section ul li:before{content:'▪ ';text-indent:1rem;color:#777;margin-right:5px;}
+    #main section ul li span{display: block;text-indent:1rem;}
+    @media(max-width:800px){
+        #main{margin-top: 107px;}
+    }
+    @media(max-width:555px){
+        #main section{width:90%;margin:10px auto 5px;}
+    }
+    @media(max-width:320px){
+        #main section{width:95%;
+    }

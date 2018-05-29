@@ -1,0 +1,61 @@
+select {-webkit-appearance:button; -moz-appearance:button;appearance:button;position: relative;}
+select::-ms-expand {display: none;/*IE*/}
+    #main .wp{max-width:1080px;width:80%;margin:0 auto;display:flex;margin-top:30px;}
+    #main .wp .left,#main .wp .right{width:48%;}
+    #main .wp .left .content{border-right:1px dotted #dbdbdb;}
+    #main .wp .content{padding:10px 30px;box-sizing:border-box;}
+    #main .wp h2,.row2 h2{color:#ac896f;margin-bottom:40px;}
+    #main .wp form div,.row2 .show1 div,.row2 .show2 div{display:flex;justify-content:space-between;align-items: center;margin-bottom:20px;color:#444;}
+    #main .wp form div label,.row2 .show1 div label,.row2 .show2 div label{width:19%;height:30px;}
+    #main .wp form div input,.row2 .show1 div input,.row2 .show2 div input{width:80%;height:30px;}
+   
+    .row2 .show1,.row2 .show2{display: none;width:70%;margin:20px auto;}
+    .row2 .show1 div input{height:30px;}
+    .row2 .show1 div.back,.row2 .show2 div.back{height:30px;margin:50px auto 100px;cursor:pointer;}
+    .fb{width: 80%;text-align: center;}
+    .btn-fb{margin-top: 20px;line-height: 1.3rem;
+ -webkit-border-radius: 5px; -moz-border-radius: 5px;border-radius: 5px;font-size:1rem;font-family:arial, helvetica, sans-serif; padding: 10px; text-decoration:none; display:inline-block;text-shadow: -1px -1px 0 rgba(0,0,0,0.3);font-weight:normal;border-bottom: 3px solid #2686b9; color: #FFFFFF;
+ background-color: #3093c7; background-image: -webkit-gradient(linear, left top, left bottom, from(#3093c7), to(#1c5a85));
+ background-image: -webkit-linear-gradient(top, #3093c7, #1c5a85);
+ background-image: -moz-linear-gradient(top, #3093c7, #1c5a85);
+ background-image: -ms-linear-gradient(top, #3093c7, #1c5a85);
+ background-image: -o-linear-gradient(top, #3093c7, #1c5a85);
+ background-image: linear-gradient(to bottom, #3093c7, #1c5a85);filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#3093c7, endColorstr=#1c5a85);
+}
+.btn-fb:hover{border-bottom: 3px solid #0e3b5a;line-height:17px;}
+    #main .wp form div input#login_b.btn,input#addBtn,
+    .row2 .show1 div input.r.btn,.row2 .show2 div input.c.btn{background-color:#666;color:#fff;font-size:1rem;margin:20px 0;
+box-shadow: 1px 2px 3px #333;border: 0;padding: 5px 0;cursor:pointer;}
+    input#addBtn,.row2 .show1 div input.r.btn,.row2 .show2 div input.c.btn{width:100%;}
+    .row1bottom .f.btn{cursor:pointer;}
+    @media(max-width:1080px){
+        #main .wp{width: 95%;}
+    }
+    @media(max-width:900px){
+        #main .wp{width:100%;}
+    }
+    @media(max-width:850px){
+        #main .wp{flex-direction: column;width:80%;}
+        #main .wp .left,#main .wp .right{width: 100%;margin: 20px auto 100px;}
+        #main .wp .left .content{border:0}
+        .row2 .show1,.row2 .show2{width: 80%;}
+    }
+    @media(max-width:600px){
+        
+        #main .wp{width:90%;}
+    }
+    @media(max-width:500px){
+        #main .wp{width:98%;}
+        .row2 .show1,.row2 .show2{width: 90%;}
+    }
+      @media(max-width:414px){
+        #main .wp{width:100%;}
+          #main .wp .content{padding:10px 15px;}
+    }
+    @media(max-width:375px){
+        #main .wp form div, .row2 .show1 div, .row2 .show2 div{justify-content:flex-start;}
+        #main .wp form div input, .row2 .show1 div input, .row2 .show2 div input{width:250px;}
+        #main .wp form div label, .row2 .show1 div label, .row2 .show2 div label{width: 80px;}
+        .row1bottom .f.btn{margin-left: 10px;}
+        #main .wp form div input#login_b.btn{width: 200px;}
+    }
