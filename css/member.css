@@ -55,7 +55,7 @@
     .mem_wp .tab_content li .row2{max-width:1280px;width: 80%;}
 }
 @media(max-width:750px){
-    .mem_wp .tab_content li .row p{font-size:1.3rem;}
+    .mem_wp .tab_content li .row p{font-size:1.2rem;}
     .mem_wp .tab_content li .row p.b{font-size: 3.5rem;}
     .mem_wp .tab_content li .row,.mem_wp .tab_content li#tab3 .content{width: 95%;}
 }
