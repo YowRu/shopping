@@ -54,7 +54,7 @@ header .row4 ul li a:hover{background-color:#b79c87;}
 #main #breadcrumbs a:hover{color:#d10c6e;}
 #main #breadcrumbs .current{font-weight:normal;background:transparent;color:#ac896f;width:96px;overflow:hidden;white-space:nowrap;text-overflow:ellipsis; }
 /*footer*/
-footer{max-width:1280px;margin:0 auto;padding:0 5px;overflow:hidden;color:#666;}
+footer{max-width:600px;margin:0 auto;padding:0 5px;overflow:hidden;color:#666;}
 footer .left{float:left;}
 footer .right{float:right;font-size:14px;}
 footer .left span{border-right:1px solid #999;padding-right:10px;}
